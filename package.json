@@ -1,5 +1,5 @@
 {
-  "name": "firestore-query",
+  "name": "firestore-cig",
   "version": "1.0.0",
   "description": "A utility to create compound indexes for firestore.",
   "main": "index.js",
