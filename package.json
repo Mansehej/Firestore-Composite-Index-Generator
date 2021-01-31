@@ -1,0 +1,30 @@
+{
+  "name": "firestore-query",
+  "version": "1.0.0",
+  "description": "A utility to create compound indexes for firestore.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mansehej/Firestore-Composite-Index-Generator.git"
+  },
+  "keywords": [
+    "firebase",
+    "firestore",
+    "compound",
+    "index",
+    "query",
+    "search",
+    "sort",
+    "limit",
+    "where"
+  ],
+  "author": "Mansehej Singh <mansehej@gmail.com> (https://github.com/Mansehej)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Mansehej/Firestore-Composite-Index-Generator/issues"
+  },
+  "homepage": "https://github.com/Mansehej/Firestore-Composite-Index-Generator#readme"
+}
