@@ -1,4 +1,5 @@
 # Firestore Compound Index Generator
+### In progress, do not use now.
 
 
 <!-- ABOUT THE PROJECT -->
