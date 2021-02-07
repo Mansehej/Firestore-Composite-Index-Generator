@@ -38,5 +38,6 @@
   },
   "bin": {
     "firestore-cig": "./index.js"
-  }
+  },
+  "preferGlobal": true
 }
