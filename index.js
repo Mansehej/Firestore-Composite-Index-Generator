@@ -10,7 +10,7 @@ const { indexFileExists, createNewIndexFile, writeIndexFile } = require('./lib/f
 clear();
 
 console.log(
-    chalk.white(
+    chalk.yellow(
         figlet.textSync('Firestore-CIG', { horizontalLayout: 'full' })
     )
 );
