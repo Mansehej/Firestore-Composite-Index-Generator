@@ -1,6 +1,5 @@
 # Firestore Composite Index Generator
-### In progress, do not use now.
-
+A command line utility to generate composite indexes for your firestore app.
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
@@ -23,3 +22,16 @@ Cars (collection) {
 If you want to get all cars of red colors being delivered to a specific location, you would need a composite index for the query. Now, if you want to sort it by delivery time (ascending), you need to build another composite query, and yet another query if you want to sort it descending instead.
 
 This utility automatically creates composite queries on the basis of what you want to sort and/or filter by, and adds them to your firestore.indexes.json.
+
+## Usage
+
+### Installation
+
+```
+npm install -g firestore-cig
+```
+
+### Usage
+```
+firestore-cig
+```
