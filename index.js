@@ -5,7 +5,7 @@ const figlet = require('figlet');
 const { askQueryDetails, askIndexFilePath } = require('./lib/questions');
 const { addBackticksToString } = require('./lib/helpers')
 const { getCompositeIndexes } = require('./lib/generator')
-const { indexFileExists, createNewIndexFile } = require('./lib/files');
+const { indexFileExists, createNewIndexFile, writeIndexFile } = require('./lib/files');
 
 clear();
 
@@ -29,6 +29,7 @@ async function run() {
     if (!indexFileExists(filePath.path)) {
         createNewIndexFile(filePath.path)
     }
+    writeIndexFile(filePath.path, compositeIndexes)
 };
 
 run();
