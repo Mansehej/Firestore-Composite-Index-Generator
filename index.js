@@ -5,7 +5,7 @@ const figlet = require('figlet');
 const { askQueryDetails, askIndexFilePath } = require('./lib/questions');
 const { addBackticksToString } = require('./lib/helpers')
 const { getCompositeIndexes } = require('./lib/generator')
-const { indexFileExists } = require('./lib/files');
+const { indexFileExists, createNewIndexFile } = require('./lib/files');
 
 clear();
 
@@ -26,13 +26,9 @@ async function run() {
         queryDetails[detail] = multipleWordParsedList
     }
     const compositeIndexes = getCompositeIndexes(queryDetails)
-    if (indexFileExists(filePath.path)) {
-        // TODO add indexes
+    if (!indexFileExists(filePath.path)) {
+        createNewIndexFile(filePath.path)
     }
-    else {
-        // TODO create file and add indexes
-    }
-
 };
 
 run();
