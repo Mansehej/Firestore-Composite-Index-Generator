@@ -1,7 +1,7 @@
 {
   "name": "firestore-cig",
   "version": "1.0.0",
-  "description": "A utility to create compound indexes for firestore.",
+  "description": "A utility to create composite indexes for firestore.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,7 +13,7 @@
   "keywords": [
     "firebase",
     "firestore",
-    "compound",
+    "composite",
     "index",
     "query",
     "search",
