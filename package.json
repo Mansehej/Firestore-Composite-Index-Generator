@@ -1,6 +1,6 @@
 {
   "name": "firestore-cig",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "A utility to create composite indexes for firestore.",
   "main": "index.js",
   "scripts": {

@@ -21,11 +21,13 @@ async function run() {
     var queryDetails = await askQueryDetails()
     var filePath = await askIndexFilePath()
     for (var detail in queryDetails) {
-        const detailList = queryDetails[detail].split(',')
-        const whiteSpaceTrimmedList = detailList.map(element => element.trim())
-        const nonEmptyValueList = whiteSpaceTrimmedList.filter(element => element.length > 0)
-        const multipleWordParsedList = nonEmptyValueList.map(element => element.split(' ').length > 1 ? addBackticksToString(element) : element)
-        queryDetails[detail] = multipleWordParsedList
+        if (typeof queryDetails[detail] === "string") {
+            const detailList = queryDetails[detail].split(',')
+            const whiteSpaceTrimmedList = detailList.map(element => element.trim())
+            const nonEmptyValueList = whiteSpaceTrimmedList.filter(element => element.length > 0)
+            const multipleWordParsedList = nonEmptyValueList.map(element => element.split(' ').length > 1 ? addBackticksToString(element) : element)
+            queryDetails[detail] = multipleWordParsedList
+        }
     }
     const compositeIndexes = getCompositeIndexes(queryDetails)
     if (!indexFileExists(filePath.path)) {
